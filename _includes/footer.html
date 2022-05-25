@@ -1,0 +1,13 @@
+<footer class="footer">
+    <div class="footer-item">
+      © 2022 {{ site.copyright_text }}
+    </div>
+    <div class="footer-item">
+      <a href="{{ "/feed.xml" | relative_url }}" class="footer-link">RSS</a></li>
+    </div>
+    <div class="footer-item">
+      {%- if site.email -%}
+      <a class="footer-link" href="mailto:{{ site.email }}">Contact</a>
+      {%- endif -%}
+    </div>
+</footer>

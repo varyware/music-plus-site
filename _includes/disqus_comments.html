@@ -1,0 +1,21 @@
+{%- if page.comments != false and jekyll.environment == "production" -%}
+<div id="disqus_thread">
+  <div style="text-align: center;padding: 10px 20px; font-size: 14px; color: #666;">
+    This site using Disqus, which blocked in some country. If you can't see comment system, please contact <br> {{ side.email }}
+  </div>
+</div>
+<script>
+  var disqus_config = function () {
+  this.page.url = "https://roger.pub" + window.location.pathname;
+  this.page.identifier = window.location.pathname
+  };
+  
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://rogerpub.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{%- endif -%}
