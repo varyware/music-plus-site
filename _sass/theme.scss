@@ -13,23 +13,33 @@ $base-font-family: ui-sans-serif, system-ui, -apple-system, Helvetica, "Helvetic
 $serif-font-family: "PT Serif", ui-serif, Georgia, "STSongti SC", "SimSong", "STSong", "Source Serif Pro", "noto serif", serif;
 $monospace-font-family: ui-monospace, Monaco, Menlo, "SF Mono Regular", "Lucida Console", SFMono-Regular, Consolas, "Courier New", Liberation Mono, monospace;
 
-$base-font-size: 15px !default;
-$base-font-weight: 400 !default;
+$nav-height: 70px !default;
+$warpper-width: 1024px;
+$layout-unit: 86px !default;
+$unit: 8px !default;
+$funit: 15px !default;
+
+$tint-color: #F9273E !default;
+$tint-color-dark: #F9273E !default;
+
+$black-color: #000 !default;
+$white-color: #FFF !default;
+
+// Extend Variable Defines
 
 $base-line-height: 1.5 !default;
 $heavy-font-weight: 600;
-$small-font-size: $base-font-size * 0.875 !default;
+$small-font-size: $funit * 0.875 !default;
 $spacing-unit: 30px !default;
 
 // Color defines
 $dark-color: #222 !default;
 $dark-color-darkmode: #eee !default;
 
-$white-color: #fff !default;
-$white-color-darkmode: #0d0f13 !default;
-
-$grey-color: #e8e8e8 !default;
+$grey-color: #919191 !default;
 $grey-color-darkmode: #14161c !default;
+
+$grey-border-color: #E5E5E6 !default;
 
 $grey-dark-color: #888888 !default;
 $grey-dark-color-darkmode: #aaaaaa !default;
@@ -48,8 +58,6 @@ $content-width: 1080px !default;
 
 $on-palm: 512px !default;
 $on-laptop: 960px !default;
-
-$nav-height: 68px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -70,11 +78,7 @@ $nav-height: 68px !default;
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
-
 // Import partials.
-@import "epozh/base", "epozh/layout", "epozh/syntax-highlighting",
-  "epozh/archives", "epozh/projects", "epozh/toc-sidebar", "epozh/pagination",
-  "epozh/global-search", "epozh/dark-mode", "custom/blog", "custom/cover";
+@import "theme/base", "theme/layout", "theme/syntax-highlighting",
+  "theme/archives", "theme/projects", "theme/toc-sidebar", "theme/pagination",
+  "theme/global-search", "theme/dark-mode", "custom/blog", "custom/cover";

@@ -2,11 +2,8 @@
   <div class="wrapper">
     <div class="site-header-container">
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-        {%- if site.site_icon_text -%}
-        {{ site.site_icon_text }}
-        {%- else -%}
-        {{ site.title }}
-        {%- endif -%}
+        <img src="{{ "/assets/icon.svg" | relative_url }}" alt="">
+        <p>Music <span>Plus</span></p>
       </a>
 
       <div class="nav-items">
@@ -25,7 +22,9 @@
           {%- endif -%}
           
           <a class="nav-link {{active_tag}}"
-            href="{{ nav_page.url | relative_url }}">{{ nav_page.nav_title | default: nav_page.title | escape | upcase }}</a>
+            href="{{ nav_page.url | relative_url }}">
+            {{ nav_page.nav_title | default: nav_page.title | escape }}
+          </a>
           {%- endif -%}
         
         {%- endfor -%}

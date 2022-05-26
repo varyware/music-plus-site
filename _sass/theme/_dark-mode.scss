@@ -1,6 +1,6 @@
 @media screen and (prefers-color-scheme: dark) {
   body {
-    background-color: $white-color-darkmode;
+    background-color: $black-color;
     color: $dark-color-darkmode;
   }
 
@@ -60,7 +60,7 @@
     color: $grey-dark-color-darkmode !important;
 
     &:hover {
-      background-color: $white-color-darkmode;
+      background-color: $black-color;
       color: $dark-color-darkmode !important;
     }
   }
@@ -177,7 +177,7 @@
   }
 
   .search-mobile .search-bar {
-    background-color: $white-color-darkmode;
+    background-color: $black-color;
     color: $dark-color-darkmode;
   }
 

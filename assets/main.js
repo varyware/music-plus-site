@@ -15,9 +15,12 @@
 
     let categoryMap = { "post": "Blog", "work": "Archive", "project": "Project", "tag": "Tag" };
 
-    searchIcon.addEventListener("click", toggleSearchInput);
+    if (searchIcon) {
+        searchIcon.addEventListener("click", toggleSearchInput);
+    }
 
     function toggleSearchInput() {
+        if (searchInputField == null) { return }
         searchInputField.classList.toggle("hidden");
         searchInputField.focus();
     }
@@ -170,7 +173,7 @@
         let searchInputHander = debounce(searchInput, 300);
         let globalSearchInputHander = debounce(globalSearchInput, 300);
 
-        searchInputField.addEventListener("input", searchInputHander);
+        if (searchInputField != null) { searchInputField.addEventListener("input", searchInputHander); }
         if (globalSearchInputField) globalSearchInputField.addEventListener("input", globalSearchInputHander);
         if (globalSearchClearButton) globalSearchClearButton.addEventListener("click", e => {
             globalSearchInputField.value = "";
