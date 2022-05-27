@@ -33,11 +33,17 @@ $small-font-size: $funit * 0.875 !default;
 $spacing-unit: 30px !default;
 
 // Color defines
+$grey-color: #919191 !default;
+$grey-color-dark: #14161c !default;
+
+$grey-bg-color: #fcfcfc !default;
+$grey-bg-color-dark: #fcfcfc !default;
+
+
 $dark-color: #222 !default;
 $dark-color-darkmode: #eee !default;
 
-$grey-color: #919191 !default;
-$grey-color-darkmode: #14161c !default;
+
 
 $grey-border-color: #E5E5E6 !default;
 
@@ -81,4 +87,4 @@ $on-laptop: 960px !default;
 // Import partials.
 @import "theme/base", "theme/layout", "theme/syntax-highlighting",
   "theme/archives", "theme/projects", "theme/toc-sidebar", "theme/pagination",
-  "theme/global-search", "theme/dark-mode", "custom/blog", "custom/cover";
+  "theme/global-search", "theme/dark-mode", "custom/home", "custom/cover";

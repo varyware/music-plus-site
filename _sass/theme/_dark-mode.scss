@@ -13,7 +13,7 @@
   }
 
   .site-header {
-    background-color: $grey-color-darkmode;
+    background-color: $grey-color-dark;
     color: $dark-color-darkmode;
     border-color: #ffffff00;
   }
@@ -22,7 +22,7 @@
     color: $dark-color-darkmode;
 
     .sidebar-category {
-      border-color: $grey-color-darkmode;
+      border-color: $grey-color-dark;
     }
 
     .sidebar-category .category-item {
@@ -43,7 +43,7 @@
   }
 
   .post-hr {
-    border-color: $grey-color-darkmode;
+    border-color: $grey-color-dark;
   }
 
   .highlighter-rouge .highlight {
@@ -74,13 +74,13 @@
   }
 
   .category-tag a {
-    background-color: $grey-color-darkmode;
+    background-color: $grey-color-dark;
     color: $dark-color-darkmode !important;
   }
 
   .projects-list {
     .list-item {
-      background-color: $grey-color-darkmode;
+      background-color: $grey-color-dark;
       color: $dark-color-darkmode;
 
       .project-link a {
@@ -90,7 +90,7 @@
   }
 
   .about-sns-list {
-    background-color: $grey-color-darkmode;
+    background-color: $grey-color-dark;
   }
 
   .search {
@@ -100,9 +100,9 @@
     }
 
     .search-result {
-      background-color: $grey-color-darkmode;
+      background-color: $grey-color-dark;
       color: $dark-color-darkmode;
-      border-color: $grey-color-darkmode;
+      border-color: $grey-color-dark;
       box-shadow: #000000 0px 1px 6px;
 
       li a {
@@ -115,7 +115,7 @@
     }
 
     .search-result-title {
-      border-color: $grey-color-darkmode;
+      border-color: $grey-color-dark;
 
       a {
         color: $dark-color-darkmode !important;
@@ -123,12 +123,12 @@
     }
 
     .search-result::after {
-      background: $grey-color-darkmode;
+      background: $grey-color-dark;
     }
   }
 
   .global-search-bar {
-    background-color: $grey-color-darkmode;
+    background-color: $grey-color-dark;
     .global-search-input {
       color: $dark-color-darkmode;
     }
@@ -146,8 +146,8 @@
   }
 
   .archives-filter {
-    background-color: $grey-color-darkmode;
-    border-color: $grey-color-darkmode;
+    background-color: $grey-color-dark;
+    border-color: $grey-color-dark;
 
     a {
       color: $grey-dark-color-darkmode;
@@ -160,7 +160,7 @@
 
   .archives-list {
     .list-item {
-      background-color: $grey-color-darkmode;
+      background-color: $grey-color-dark;
     }
 
     .work-link a {
