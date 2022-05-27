@@ -5,6 +5,92 @@ titile: Music Plus
 
 <div class="home">
 
+    <div class="landing">
+        <section class="half header wrapper">
+            <div class="section-content header-description">
+                <p>Apple Music enhanced app brings better listening experience</p>
+                <img src="/assets/img/Download - Light.jpg" alt="" srcset="">
+            </div>
+            <div class="section-content header-image">
+                <img src="/assets/img/Header - Bezel.png" alt="" srcset="">
+            </div>
+        </section>
+        <div class="landing-background"></div>
+    </div>
 
+    <section class="full landscape wrapper">
+        <div class="section-content">
+            <h2 class="section-title">
+                Landscape Mode
+            </h2>
+            <p class="section-description landscape-description">
+                Turn iPhone to a music player with big control buttons and large song artwork on landscape mode. Also support screen always on
+            </p>
+            <img class="landscape-image" src="/assets/img/landscape.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="half widget wrapper">
+        <div class="section-content widget-image">
+            <img src="/assets/img/Widget-Wide.png" alt="">
+            <p>Music Plus</p>
+        </div>
+        <div class="section-content">
+            <div class="widget-description">
+                <h2 class="section-title">
+                    Quickly add using widget
+                </h2>
+                <p class="section-description landscape-description">
+                    Widget speeds up the process of adding songs. Single tap on the widget, the currently playing song will be added to library and you will never miss good tunes again
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="half share wrapper">
+        <div class="section-content">
+            <div class="share-description">
+                <img class="share-icon" src="/assets/img/Share-Icon.png" alt="" srcset="">
+                <h2 class="section-title">
+                    Share beloved songs
+                </h2>
+                <p class="section-description">
+                    Share the song using stylized ASCII art text, or paste it directly into your journal to record the moment
+                </p>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="share-image-wrapper">
+                <img class="share-image" src="/assets/img/bezel-share.png" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <div class="features">
+        <section class="full wrapper">
+            <div class="features-title">
+                <h2>What's new</h2>
+                <a href="/updates">see all</a>
+            </div>
+            <div class="features-timeline">
+                <div class="features-dot-group">
+                    <div class="features-timeline-dot"></div>
+                    <div class="features-timeline-dot"></div>
+                    <div class="features-timeline-dot"></div>
+                </div>
+                <div class="features-timeline-redline"></div>
+            </div>
+            <ul class="features-items">
+                {% for feat in site.data.features limit: 3 %}
+                <li class="features-item">
+                    <img src="/assets/img/{{ feat.icon | default: 'vinyl' }}.png" alt="">
+                    <h3 class="feature-title">{{ feat.feature }}</h3>
+                    <p class="feature-description">{{ feat.short_description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
 
 </div>

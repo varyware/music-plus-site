@@ -1,0 +1,248 @@
+.home {
+    padding: 0 0;
+
+    section {
+        &.half {
+            display: flex;
+            flex-direction: row;
+            .section-content {
+                flex: 1;
+            }
+        }
+
+        &.full {
+            .section-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .section-title {
+            font-size: $funit * 2.4;
+            font-weight: 800;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section-description {
+            font-size: $funit * 1.4;
+            font-weight: normal;
+            padding: 0;
+            margin: $unit * 2 0 0 0;
+            line-height: 1.4;
+        }
+    }
+
+    .landing {
+        position: relative;
+
+        .landing-background {
+            height: 210px;
+            width: 100%;
+            background-image: url("/assets/img/Wave\ Tile.png");
+            background-repeat: repeat;
+            background-size: 180px 42px;
+            opacity: 30%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    .header {
+        padding: $unit * 8 $layout-unit;
+
+        .header-description {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            p {
+                font-size: $funit * 2.8;
+                font-weight: 800;
+                color: $tint-color;
+            }
+
+            img {
+                margin-top: 32px;
+                height: $unit * 5;
+            }
+        }
+
+        .header-image {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .landscape {
+        padding: $unit*10 $layout-unit $unit*8 $layout-unit;
+
+        .landscape-description {
+            padding: 0 $unit * 11;
+            text-align: center;
+        }
+
+        .landscape-image {
+            margin-top: $unit * 5;
+        }
+    }
+
+    .widget {
+        .widget-image {
+            background-image: url("/assets/img/Wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+                max-width: 80%;
+            }
+
+            p {
+                font-size: $funit * 0.8;
+                color: $white-color;
+                margin: $unit 0 0 0;
+            }
+        }
+
+        .widget-description {
+            padding-top: $unit * 18;
+            padding-bottom: $unit * 18;
+            padding-left: $unit * 5;
+            padding-right: $layout-unit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .share {
+
+        padding: 0 $layout-unit;
+
+        .share-description {
+            padding-right: $unit * 5;
+            padding-top: $unit * 16;
+            padding-bottom: $unit * 16;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            .share-icon {
+                height: $unit * 7;
+                margin-bottom: $unit * 2;
+            }
+        }
+
+        .share-image-wrapper {
+            height: 500px;
+            overflow: hidden;
+            padding-left: $unit*5;
+
+            .share-image {
+                margin-top: $unit * 10;
+            }
+        }
+    }
+
+    .features {
+        background-color: $grey-bg-color;
+
+        .features-title {
+            padding: $unit * 4 $layout-unit;
+            padding-bottom: $unit * 3;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $tint-color;
+
+            h2 {
+                padding: 0;
+                margin: 0;
+                font-size: $funit * 1.8;
+            }
+
+            a {
+                color: $tint-color;
+            }
+        }
+
+        .features-timeline {
+            height: 16px;
+            position: relative;
+
+            .features-dot-group {
+                height: 100%;
+                width: 100%;
+                padding: 0 $layout-unit;
+                display: flex;
+                justify-content: space-around;
+                column-gap: $unit * 7;
+            }
+
+            .features-timeline-redline {
+                position: absolute;
+                background-color: $tint-color;
+                height: 0.5 * $unit;
+                top: 6px;
+                left: 0;
+                right: 0;
+            }
+
+            .features-timeline-dot {
+                height: $unit * 2;
+                width: $unit * 2;
+                border-radius: $unit;
+                background-color: $white-color;
+                border: $unit / 2 solid $tint-color;
+                z-index: 99;
+            }
+        }
+
+        .features-items {
+            display: flex;
+            padding: $unit * 4 $layout-unit;
+            padding-bottom: $unit * 9;
+            flex-direction: row;
+            list-style: none;
+            column-gap: $unit * 7;
+            margin: 0;
+            .features-item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                min-height: 160px;
+                flex: 1;
+                color: $tint-color;
+
+                img {
+                    height: $unit * 10;
+                    width: $unit * 10;
+                    object-fit: cover;
+                }
+
+                .feature-title {
+                    font-size: 1.5 * $funit;
+                    padding: $unit 0;
+                    margin: 0;
+                }
+
+                .feature-description {
+                    font-size: 1.2 * $funit;
+                    text-align: center;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+}

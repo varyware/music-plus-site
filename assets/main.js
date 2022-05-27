@@ -152,6 +152,7 @@
     }
 
     function searchInput() {
+        if (!searchResultDomNode) { return }
         searchResultDomNode.innerHTML = "";
         let KEYWORD = searchInputField.value.trim();
         if (KEYWORD.length > 0) { 

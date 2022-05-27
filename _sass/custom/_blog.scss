@@ -27,7 +27,7 @@
     }
 
     @media screen and (prefers-color-scheme: dark) {
-      background-color: $grey-color-darkmode;
+      background-color: $grey-color-dark;
     }
 
     .headline-info {
@@ -152,7 +152,7 @@
       flex-direction: column;
 
       @media screen and (prefers-color-scheme: dark) {
-        background-color: $grey-color-darkmode;
+        background-color: $grey-color-dark;
       }
 
       @include media-query($on-palm) {
