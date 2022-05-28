@@ -6,6 +6,22 @@ nav_item: 1
 nav_title: Updates
 ---
 
-<div class="wrapper">
+<div class="wrapper insetted updates">
 
+    <h1 class="updates-page-header">Version History </h1>
+
+    {%- assign date_format = "%b %-d, %Y" -%}
+    {% for ver in site.data.releases %}
+    <div class="version-group">
+        <h2 class="version-number">{{ ver.version }}</h2>
+        <p class="version-released">Released at: {{ ver.released | date: date_format }}</p>
+        
+        {% include updates/items.html features=ver.features %}
+        
+    </div>
+    {% endfor %}
+
+    <div class="updates-count">
+        <p>Total {{ site.data.releases | size }} updates</p>
+    </div>
 </div>

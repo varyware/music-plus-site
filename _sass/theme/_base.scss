@@ -215,7 +215,7 @@ pre {
     padding-left: $layout-unit;
     padding-right: $layout-unit;
 
-    @include media-query($on-palm) {
+    @include on-palm {
       padding-left: $unit * 2;
       padding-right: $unit * 2;
     }

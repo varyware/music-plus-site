@@ -1,0 +1,20 @@
+{% comment %}
+<div class="updates">
+    <div class="version-group">
+        {% include updates/items.html features=version_features %}
+    </div>
+</div>
+{% endcomment %}
+
+{% assign features = include.features | default: "" %}
+<ul class="updates-items">
+{% for feat in features %}
+    <li class="updates-item">
+        <div class="updates-item-header">
+            <img src="/assets/img/{{ feat.icon | default: 'vinyl' }}.png" alt="">
+            <h2 class="updates-item-title">{{ feat.feature }}</h2>
+        </div>
+        <p class="updates-item-description">{{ feat.description }}</p>
+    </li>
+{% endfor %}
+</ul>
