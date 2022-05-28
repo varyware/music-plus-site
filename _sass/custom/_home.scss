@@ -1,6 +1,10 @@
 .home {
   padding: 0 0;
 
+  @include dark-mode {
+    color: $white-color;
+  }
+
   section {
     &.half-left-image {
       display: flex;
@@ -134,6 +138,10 @@
         font-size: $funit;
         font-weight: 450;
         margin: $unit * 2 0;
+
+        @include dark-mode {
+          color: $tint-color;
+        }
       }
     }
 
@@ -258,6 +266,10 @@
     flex-direction: column;
     padding-top: $unit * 2;
     padding-bottom: $unit * 2;
+
+    @include dark-mode {
+      background-color: $grey-color-dark;
+    }
 
     @include on-palm {
       padding: $unit * 4 $unit * 2;
