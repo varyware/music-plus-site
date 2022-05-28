@@ -138,6 +138,10 @@
         font-size: $funit;
         font-weight: 450;
         margin: $unit * 2 0;
+
+        @include dark-mode {
+          color: $tint-color;
+        }
       }
     }
 
