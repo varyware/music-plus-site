@@ -1,5 +1,5 @@
 .post {
-  padding-bottom: $unit * 15;
+  padding-bottom: $unit * 10;
 }
 
 
@@ -204,6 +204,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $white-color;
   }
 
   .gotop-button:hover {

@@ -78,6 +78,12 @@ $on-laptop: 1024px !default;
   }
 }
 
+@mixin on-palm {
+  @media screen and (max-width: $on-palm) {
+    @content;
+  }
+}
+
 @mixin dark-mode {
   @media screen and (prefers-color-scheme: dark) {
     @content;
@@ -87,4 +93,4 @@ $on-laptop: 1024px !default;
 // Import partials.
 @import "theme/base", "theme/layout", "theme/post", "theme/syntax-highlighting",
   "theme/archives", "theme/projects", "theme/toc-sidebar", "theme/pagination",
-  "theme/global-search", "theme/dark-mode", "custom/home", "custom/cover";
+  "theme/global-search", "theme/dark-mode", "custom/home", "custom/cover", "custom/updates";

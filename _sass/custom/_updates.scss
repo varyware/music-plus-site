@@ -1,0 +1,61 @@
+.updates {
+  font-size: $funit * 1.2;
+  color: $black-color;
+
+  .version-group {
+    margin-bottom: $unit * 4;
+
+    .version-number {
+      font-size: $funit * 1.6;
+    }
+
+    .version-released {
+      font-weight: 450;
+      color: $grey-color;
+    }
+  }
+
+  .updates-page-header {
+    margin: 0;
+    margin-top: $unit * 4;
+    margin-bottom: $unit * 4;
+    font-size: $funit * 2;
+    font-weight: 800;
+  }
+
+  .updates-items {
+    list-style: none;
+  }
+
+  .updates-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: $unit;
+    margin-bottom: $unit;
+
+    .updates-item-header {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: $unit * 6;
+        width: $unit * 6;
+        margin-right: $unit * 2;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: $funit * 1.6;
+      }
+    }
+
+    .updates-item-description {
+      font-size: $funit * 1.1;
+    }
+  }
+
+  .updates-count {
+    margin-bottom: $funit * 6;
+    font-weight: 450;
+  }
+}

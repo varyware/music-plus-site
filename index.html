@@ -6,13 +6,14 @@ titile: Music Plus
 <div class="home">
 
     <div class="landing">
-        <section class="half header wrapper insetted">
+        <section class="half-right-image header wrapper insetted">
             <div class="section-content header-description">
                 <p>Apple Music enhanced app brings better listening experience</p>
-                <img src="/assets/img/Download - Light.jpg" alt="" srcset="">
+                <img src="/assets/img/download-badge-red-landing.png" alt="" srcset="">
+                <p class="paid-note">Free to use, one-time payment for premium</p>
             </div>
             <div class="section-content header-image">
-                <img src="/assets/img/Header - Bezel.png" alt="" srcset="">
+                <img src="/assets/img/bezel-header.png" alt="" srcset="">
             </div>
         </section>
         <div class="landing-background"></div>
@@ -30,7 +31,7 @@ titile: Music Plus
         </div>
     </section>
 
-    <section class="half widget wrapper">
+    <section class="half-left-image widget wrapper">
         <div class="section-content widget-image">
             <img src="/assets/img/Widget-Wide.png" alt="">
             <p>Music Plus</p>
@@ -48,10 +49,10 @@ titile: Music Plus
 
     </section>
 
-    <section class="half share wrapper insetted">
+    <section class="half-right-image share wrapper insetted">
         <div class="section-content">
             <div class="share-description">
-                <img class="share-icon" src="/assets/img/Share-Icon.png" alt="" srcset="">
+                <img class="share-icon" src="/assets/img/icon-share.png" alt="" srcset="">
                 <h2 class="section-title">
                     Share beloved songs
                 </h2>
@@ -67,29 +68,21 @@ titile: Music Plus
         </div>
     </section>
 
-    <div class="features">
-        <section class="full wrapper">
-            <div class="features-title">
-                <h2>What's new</h2>
-                <a href="/updates">see all</a>
-            </div>
-            <div class="features-timeline">
-                <div class="features-dot-group">
-                    <div class="features-timeline-dot"></div>
-                    <div class="features-timeline-dot"></div>
-                    <div class="features-timeline-dot"></div>
+    <div class="full features">
+        <div class="features-title wrapper">
+            <h2>What's New</h2>
+            <a href="/updates">see all</a>
+        </div>
+        <section class="features-update wrapper">
+            <div class="updates">
+                {%- assign date_format = "%b %-d, %Y" -%}
+                {% assign ver = site.data.releases.first %}
+                <div class="version-group">
+                    <h2 class="version-number">Version {{ ver.version }}</h2>
+                    <p class="version-released">Released at: {{ ver.released | date: date_format }}</p>
+                    {% include updates/items.html features=ver.features %}
                 </div>
-                <div class="features-timeline-redline"></div>
             </div>
-            <ul class="features-items">
-                {% for feat in site.data.features limit: 3 %}
-                <li class="features-item">
-                    <img src="/assets/img/{{ feat.icon | default: 'vinyl' }}.png" alt="">
-                    <h3 class="feature-title">{{ feat.feature }}</h3>
-                    <p class="feature-description">{{ feat.short_description }}</p>
-                </li>
-                {% endfor %}
-            </ul>
         </section>
     </div>
 

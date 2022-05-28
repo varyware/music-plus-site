@@ -6,14 +6,18 @@
   border-bottom: 1px solid $grey-border-color;
   height: $nav-height;
 
+  @include on-palm {
+    height: $nav-height * 0.8;
+  }
+
   // Positioning context for the mobile navigation icon
   background: #fff;
 
-  transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition-property: height;
-  transition-duration: 0.56s;
-  transition-timing-function: cubic-bezier(0.52, 0.16, 0.24, 1);
-  transition-delay: 0s;
+  // transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
+  // transition-property: height;
+  // transition-duration: 0.56s;
+  // transition-timing-function: cubic-bezier(0.52, 0.16, 0.24, 1);
+  // transition-delay: 0s;
 }
 
 .site-header-container {
@@ -23,6 +27,10 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
+  @include on-palm {
+    height: $nav-height * 0.8;
+  }
 
   .site-title {
     font-family: $base-font-family;
@@ -145,6 +153,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid $grey-border-color;
 
   @include dark-mode {
     background-color: $grey-color-dark;
@@ -192,6 +201,36 @@
       @include dark-mode {
         color: $white-color;
       }
+    }
+  }
+
+  .footer-download {
+    display: flex;
+    color: $black-color;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: $unit * 5;
+    padding-bottom: $unit * 4;
+    row-gap: 8px;
+    
+    .appicon {
+      height: $unit * 9;
+      width: $unit * 9;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: $funit * 1.46;
+    }
+
+    p {
+      margin-bottom: $unit;
+      font-size: $funit;
+    }
+
+    .download-badge {
+      height: $unit * 5;
     }
   }
 }
