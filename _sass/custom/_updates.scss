@@ -2,6 +2,10 @@
   font-size: $funit * 1.2;
   color: $black-color;
 
+  @include dark-mode {
+    color: $white-color;
+  }
+
   .version-group {
     margin-bottom: $unit * 4;
 
