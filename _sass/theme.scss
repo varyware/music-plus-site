@@ -62,8 +62,8 @@ $blockquote-color-darkmode: #a8b2bd !default;
 // Width of the content area
 $content-width: 1080px !default;
 
-$on-palm: 512px !default;
-$on-laptop: 960px !default;
+$on-palm: 599px !default;
+$on-laptop: 1024px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -85,6 +85,6 @@ $on-laptop: 960px !default;
 }
 
 // Import partials.
-@import "theme/base", "theme/layout", "theme/syntax-highlighting",
+@import "theme/base", "theme/layout", "theme/post", "theme/syntax-highlighting",
   "theme/archives", "theme/projects", "theme/toc-sidebar", "theme/pagination",
   "theme/global-search", "theme/dark-mode", "custom/home", "custom/cover";
