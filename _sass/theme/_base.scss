@@ -203,8 +203,6 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -213,10 +211,18 @@ pre {
   margin-right: auto;
   margin-left: auto;
   
+  &.insetted {
+    padding-left: $layout-unit;
+    padding-right: $layout-unit;
+
+    @include media-query($on-palm) {
+      padding-left: $unit * 2;
+      padding-right: $unit * 2;
+    }
+  }
+
   @include media-query($on-palm) {
     max-width: 100%;
-    padding-left: $spacing-unit / 3 * 2;
-    padding-right: $spacing-unit / 3 * 2;
   }
 }
 
