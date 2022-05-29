@@ -126,10 +126,15 @@
       img {
         margin-top: $unit * 7;
         height: $unit * 7;
+        background-color: $white-color;
 
         @include on-palm {
           margin-top: $unit * 3;
           text-align: center;
+        }
+
+        @include dark-mode {
+          background-color: $black-color;
         }
       }
 
