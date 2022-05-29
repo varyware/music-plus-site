@@ -2,6 +2,8 @@
 title: Privacy Policy
 permalink: /privacy-policy/
 layout: post
+nav_item: 22
+nav_title: Privacy
 date: 2022-05-26 00:00:00 +0000
 author: Music Plus
 ---
