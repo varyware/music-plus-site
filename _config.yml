@@ -24,6 +24,7 @@ description: Bringing enhanced features to Apple Music
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://musicplus.pro"
 site_icon_text: Music Plus
+appstore_link: https://itunes.apple.com/app/musicplus/id1626398921?mt=8&ct=homepage
 author: Varyware
 lang: en_US
 twitter:
