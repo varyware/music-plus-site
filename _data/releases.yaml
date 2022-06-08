@@ -1,23 +1,30 @@
-- version: 1.0.0(93)
+- version: 1.1.0(99)
+  released: 2022-06-08T18:38:00
+  features:
+    - feature: Landscape
+      icon: "feature-landscape"
+      description: |
+        Landscape mode now remember the previous orientation
+
+    - feature: Individual Controls
+      icon: "feature-individual-controls"
+      description: |
+        Show individual controls on main view
+
+- version: 1.0.0(84)
   released: 2022-05-26T11:12:00
   features:
     - feature: Landscape
-      version: "1.0"
       icon: "feature-landscape"
-      short_description: "Play music on landscape mode"
       description: |
         Turn iPhone to a music player with bigger buttons and large song artwork on landscape mode
 
     - feature: Widget
-      version: "1.0"
-      short_description: "Quickly add song using widget"
       icon: "feature-widget"
       description: |
         Adding songs to library is fast than ever. Single tap on home screen widget and done
 
     - feature: Share
-      version: "1.0"
-      short_description: "Share song with ASCII art "
       icon: "feature-share"
       description: |
         Share beloved song artworks, and using ASCII art to record what you listening in this moment
