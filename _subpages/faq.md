@@ -13,6 +13,10 @@ If you can't find what you're looking for, please contact us.
 
 email: [feedback@varyware.com](mailto:feedback@varyware.com)
 
+## Control buttons lose response for a few seconds at first launch
+
+When Apple Music is not running, it takes some time for iOS to launch and respond to our requests. We are now working on this issue and are sorry for your poor experience.
+
 ## Why song artwork image lost?
 
 If you listening stream musics, the artwork loaded from Apple Music online. It depends on network qualitity.
