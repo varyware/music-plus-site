@@ -7,11 +7,13 @@ date: 2022-05-26 00:00:00 +0000
 author: Music Plus
 ---
 
+**🎁 The app is currently in an early version and priced at 50% of the original price. If you find a unique bug in Music Plus, please give us feedback and we will send you a Music Plus Pro as a gift and thank you for using our product.**
+
+Email: [feedback@varyware.com](mailto:feedback@varyware.com)
+
 Frequently asked questions and our answers.
 
 If you can't find what you're looking for, please contact us.
-
-email: [feedback@varyware.com](mailto:feedback@varyware.com)
 
 ## Why adding songs to library failed?
 
