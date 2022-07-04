@@ -13,6 +13,10 @@ If you can't find what you're looking for, please contact us.
 
 email: [feedback@varyware.com](mailto:feedback@varyware.com)
 
+## Why adding songs to library failed?
+
+We've received some feedback from some users that the interface keeps pending. This is a network issue with Apple Music. If you can't add music in Music Plus, it will also take longer to add music to your library in Apple Music app. The current solution is to try again after a while.
+
 ## Control buttons lose response for a few seconds at first launch
 
 When Apple Music is not running, it takes some time for iOS to launch and respond to our requests. We are now working on this issue and are sorry for your poor experience.
