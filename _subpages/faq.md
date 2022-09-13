@@ -9,7 +9,7 @@ author: Music Plus
 
 **🎁 The app is currently in an early version and priced at 50% of the original price. If you find a unique bug in Music Plus, please give us feedback and we will send you a Music Plus Pro as a gift and thank you for using our product.**
 
-Email: [feedback@varyware.com](mailto:feedback@varyware.com)
+Email: [feedback@tidyframe.com](mailto:feedback@tidyframe.com)
 
 Frequently asked questions and our answers.
 

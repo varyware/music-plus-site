@@ -19,29 +19,29 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Music Plus
-email: hi@varyware.com
+email: hi@tidyframe.com
 description: Bringing enhanced features to Apple Music
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://musicplus.pro"
 site_icon_text: Music Plus
 appstore_link: https://itunes.apple.com/app/musicplus/id1626398921?mt=8&ct=homepage
-author: Varyware
+author: Tidy Frame
 lang: en_US
 twitter:
-  username: vary_ware
+  username: tidyframeapp
   card: summary
 
 social:
-  name: Varyware
+  name: Tidy Frame
   links:
-    - https://twitter.com/vary_ware
+    - https://twitter.com/tidyframeapp
 
 # Build settings
 
 timezone: Asia/Shanghai
 
 # google_analytics: 
-copyright_text: Music Plus.
+copyright_text: Tidy Frame.
 # theme: minima
 
 plugins:

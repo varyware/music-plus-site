@@ -1,3 +1,24 @@
+- version: 1.2.1
+  released: 2022-09-13T18:38:00
+  features:
+    - feature: iOS 16 Support
+      icon: "feature-landscape"
+      description: |
+        Fix some issues on iOS 16
+
+- version: 1.2.0
+  released: 2022-08-16T18:38:00
+  features:
+    - feature: Auto Rotate
+      icon: "feature-landscape"
+      description: |
+        Automatically turn on landscape mode when the device is on auto-rotate
+
+    - feature: Appearance
+      icon: "feature-individual-controls"
+      description: |
+        Fine-tuned the user interface to make elements look more compact
+
 - version: 1.1.0(99)
   released: 2022-06-08T18:38:00
   features:

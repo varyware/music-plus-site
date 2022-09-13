@@ -16,6 +16,7 @@
     .version-released {
       font-weight: 450;
       color: $grey-color;
+      margin-bottom: $unit * 2;
     }
   }
 
@@ -49,7 +50,7 @@
 
       h2 {
         margin: 0;
-        font-size: $funit * 1.6;
+        font-size: $funit * 1.2;
       }
     }
 
