@@ -13,7 +13,7 @@
         <div class="updates-item-header">
             <h2 class="updates-item-title">{{ feat.feature }}</h2>
         </div>
-        <p class="updates-item-description">{{ feat.description }}</p>
+        <p class="updates-item-description">{{ feat.description | newline_to_br }}</p>
     </li>
 {% endfor %}
 </ul>

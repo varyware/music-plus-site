@@ -1,3 +1,21 @@
+- version: 2.0.0
+  released: 2023-01-09T18:38:00
+  features:
+    - feature: Redesign
+      icon: "feature-landscape"
+      description: |
+        In this update, we've redesigned the interface and given it a fresh new look to make room for new features in the future.
+        
+        - Redesigned landscape mode and gestures support
+        - More fancy text styles
+        - Redesigned main user interface
+        - Move the existing settings options to a separate page
+        - Add playlist switching
+        - New ability to add full albums to the library
+        - Music detailed information function
+        - A new artwork Home Screen widget
+        - Fixed a long-standing bug that affects the playback of local music files
+
 - version: 1.2.1
   released: 2022-09-13T18:38:00
   features:

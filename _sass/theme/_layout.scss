@@ -237,6 +237,8 @@
     .appicon {
       height: $unit * 9;
       width: $unit * 9;
+      border-radius: 16px;
+      border: 1px solid #00000020;
     }
 
     h1 {

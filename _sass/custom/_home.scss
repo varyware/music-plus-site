@@ -171,33 +171,25 @@
 
     .landscape-image {
       margin-top: $unit * 4;
+      padding: 0 $unit * 4;
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+
+      @include on-palm {
+        padding: 0;
+      }
     }
   }
 
   .widget {
     .widget-image {
-      background-image: url("/assets/img/Wallpaper.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      img {
-        max-width: 80%;
-        @include on-palm {
-          max-width: 60%;
-        }
-      }
-
-      p {
-        font-size: $funit * 0.8;
-        color: $white-color;
-        margin: $unit 0 0 0;
-      }
+      object-fit: contain;
+      height: auto;
+      max-width: 50%;
 
       @include on-palm {
-        padding: $unit * 8 0;
+        max-width: 100%;
       }
     }
 
